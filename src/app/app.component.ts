@@ -17,6 +17,7 @@ export class AppComponent {
   inputDate:string='';
   inputAmount:string='';
   inputHeight:number=0;
+  inputMile:number=0;
   car={
     color:'black',
 year:2022,
@@ -35,6 +36,10 @@ this.inputDate=(event.target as HTMLInputElement).value;
       }
 public onChangeHeight(event:Event){
   this.inputHeight=Number((event.target as HTMLInputElement).value);
+
+}
+public onChangeMile(event:Event){
+  this.inputMile=Number((event.target as HTMLInputElement).value);
 
 }
 
